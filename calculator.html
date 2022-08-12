@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title >Calculator</title>
+    </head>
+    <body>
+        <header>
+            <h1 >Calculator</h1>
+        </header>
+        <style>
+            #Output{
+                border: 4px solid green;
+            }
+            body{
+                height: 97vh;
+                background: linear-gradient(
+                    0deg,
+                    rgba(34, 193, 195, 1) 0%,
+                    rgb(182, 97, 146) 100%
+                );
+                overflow: hidden; 
+            }
+            
+        </style>
+
+        <input type="number" id="numInput" style="position: fixed; left: 670px; top: 650px;"/>
+        <input type="number" id="dos" style="position: fixed; left: 850px; top: 650px;"/>
+        <canvas id="Output" width="400" height="400" style="position: fixed; left: 650px; top: 20;"></canvas>
+        <button id="multiply" name="mulitply" onclick="multiply();" style="width: 80px; height: 50px; position:fixed; left:660px; top:550px;">Multiply</button> 
+        <button id="addition" name="add" onclick="add();" style="width: 80px; height: 50px; position:fixed; left:760px; top:550px;">Add</button> 
+        <button id="subtract" name="sub" onclick="subtract();" style="width: 80px; height: 50px; position:fixed; left:860px; top:550px;">Subtract</button> 
+        <button id="divid" name="divid" onclick="divide();" style="width: 80px; height: 50px; position:fixed; left:960px; top:550px;">Divide</button> 
+        
+        <script src="calculator.js"></script>
+    </body>
+</html>
